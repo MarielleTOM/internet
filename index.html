@@ -1,11 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oficina do Gelatto</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link href="index.css" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
+
 <body>
-    
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a href="index.html">
+        <img src="imgdasdiv/icon.jpg" alt="Logo" width="100" height="90" class="ofc-gela">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" id="login" aria-current="page" href="login.html">Login</a>
+          <a class="nav-link active" aria-current="page" href="produtos.html">Produtos </a>
+          <a class="nav-link active" aria-current="page" href="contatos.html">Contatos</a>
+          <a class="nav-link active" aria-current="page" href="carrinho.html">Carrinho </a>
+          <a class="nav-link active" aria-current="page" href="favorito.html">Favoritos </a>
+
+        </div>
+      </div>
+  </nav>
+
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="imgdasdiv/carousel.png" class="d-block w-100" alt="Não dá para explicar tem que experimentar. foto de sorvetes de pote e massa">
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+
+
+  <div class="container text-center">
+    <div class="row">
+      <div class="col"><img src="imgdasdiv/sorvete.jpg" class="minha class" width="300" height="300" alt="Venha provar nosso
+sorvete"></div>
+      <div class="col"><img src="imgdasdiv/acai.jpg" width="300" height="300" alt="O MELHOR açai da região Copo de 300 ml Copo de 500ml"></div>
+      <div class="col"><img src="imgdasdiv/bubble.jpg" width="300" height="300" alt="Monte o Bubble Waffle do seu jeito!"></div>
+      <div class="col"><img src="imgdasdiv/milk.jpg" width="300" height="300" alt="Venha se apaixonar pelos nosso MilkShakes Copo de 300 ml Copo de 500ml"></div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h3>Venha provar nosso <p class="mariRosa">sorvete</p>
+        </h3>
+      </div>
+      <div class="col">
+        <h3>O <p class="mariRosa">MELHOR</p> açai da região </h3><b>Copo de 300 ml<br> Copo de 500ml </b>
+      </div>
+      <div class="col">
+        <h3>Monte o <p class="mariAzul">Bubble Waffle</p> do seu jeito!</h3>
+      </div>
+      <div class="col">
+        <h3>Venha se apaixonar pelos nosso <p class="mariAzul">MilkShakes</p>
+        </h3><b>Copo de 300 ml<br> Copo de 500ml</b>
+      </div>
+    </div>
+  </div>
+
+  <!--Aqui a estrutura pode ser livre desde que tenha quatro produtos por linha quando a página for aberta em um desktop e um produto por linha quando for aberto em um smartphone-->
+  <div id="containerProdutos" class="row"></div>
+  <!--fim-->
+
+  <br>
+
+
+  <div class="p-3 mb-2 bg-white text-dark">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <br>
+          <h2>Está passando por um dia daqueles? <br> Eu sei bem como é isso e como te ajudar!!
+            <br>
+            Adquira agora mesmo os nossos potes de sorvete e deixe o seu dia bem mais leve!
+            <br>
+            Venha para a Oficina do Gelatto mais próxima de você e aproveite!
+          </h2>
+          <br>
+        </div>
+        <div class="col"><img src="imgdasdiv/sorvete-pote.jpg" class="rounded mx-auto d-block" alt="Sorvete de pote"></div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="mariAzulBack">
+    <br>
+    <div class="container text-center">
+      <div class="row row-cols-4">
+        <div class="col"> <img src="imgsvg/shopping_cart_icon_172223.svg" alt="Carrinho de compras" width="32" height="32"><br>
+          <p>CARRINHO</p><br>
+          <p>clique aqui para adicionar ao carrinho</p>
+        </div>
+        <div class="col"><img src="imgsvg/card-outline.svg" alt="Suas compras" width="32" height="32"><br>
+          <p>COMPRAS</p><br>
+          <p>clique aqui para ver as suas compras </p>
+        </div>
+        <div class="col"> <img src="imgdasdiv/tabler-icon-truck-delivery.png" alt="Delivery" width="32" height="32"><br>
+          <p>DELIVERY</p><br>
+          <p>A entrega mais rápida da cidade</p>
+        </div>
+        <div class="col"><img src="imgdasdiv/tabler-icon-refresh.png" alt="Troca" width="32" height="32"><br>
+          <p>TROCA</p><br>
+          <p>clique aqui para trocar as suas compras </p>
+        </div>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div id="containerCategoria" class="row">
+  </div>
+  <div id="containerProdutos" class="row">
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+
+
 </body>
+
 </html>
